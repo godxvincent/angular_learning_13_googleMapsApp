@@ -3,6 +3,25 @@
         Simple card
     </mat-card-title>
     <mat-card-content>
-        XWF
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" (mapReady)="mapReader( $event )">
+            <agm-marker [latitude]="marker.latitud" [longitude]="marker.longitud" *ngFor="let marker of markers; let indice = index">
+                <agm-info-window>
+                    <strong>
+                        {{ marker.titulo }}
+                    </strong>
+                    <p>
+                        {{ marker.descripcion }}
+                    </p>
+                    <div>
+                        <button mat-raised-button color="primary" (click)="editMarker(marker)">
+                            editar
+                        </button>
+                        <button mat-raised-button color="warn" (click)="deleteMarker(indice)">
+                            borrar
+                        </button>
+                    </div>
+                </agm-info-window>
+            </agm-marker>
+        </agm-map>
     </mat-card-content>
 </mat-card>

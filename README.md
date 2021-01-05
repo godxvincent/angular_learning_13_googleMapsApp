@@ -47,6 +47,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## ** Extra installations **
 * ng add @angular/material  https://material.angular.io/guide/getting-started
+* npm install @types/googlemaps@3.39.13
 
 
 
@@ -56,6 +57,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     https://material.angular.io/guide/getting-started
     https://material.angular.io/guide/theming#using-a-pre-built-theme
 
+* Documentación angular google maps
+
+    https://angular-maps.com/guides/getting-started/
+
+* Documentación Angular
+    * Angular NgZone https://angular.io/api/core/NgZone
 
 * How to remove sensitve data
 

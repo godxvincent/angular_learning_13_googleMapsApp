@@ -1,0 +1,18 @@
+<form [formGroup]="formulario">
+    <mat-form-field class="example-full-width">
+        <mat-label>Editar Marcador</mat-label>
+        <input matInput placeholder="Titulo" formControlName="titulo">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Descripción </mat-label>
+        <textarea rows="3" matInput placeholder="Descripción" formControlName="descripcion"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="guardarCambios()">
+        Aceptar
+    </button>
+    <button mat-raised-button color="warn" (click)="onNoClick()">
+        Cancelar
+    </button>
+</form>
